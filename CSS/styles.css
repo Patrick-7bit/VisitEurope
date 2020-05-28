@@ -1,0 +1,274 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #385a7c;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  padding: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #385a7c;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  padding: 0 20px;
+}
+/* Without scrolling the navbar is originally transparent*/
+.navbar.top {
+  background: transparent;
+}
+
+.logo {
+  font-weight: 500;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul a {
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: #f97171 1px solid;
+}
+
+/* HEADER */
+
+.header {
+  background: url("./img/florence.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.content h2 {
+  font-size: 55px;
+}
+.content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+/* Overlay*/
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+/* the value of z-index must be higher than the one of the overlay to get the text in the header on the top*/
+.header * {
+  z-index: 3;
+}
+/* on the other pages, the header gets another background image and its height is reduced*/
+.header.blog {
+  background: url("./img/writing-828911_1280.jpg") no-repeat center center/cover;
+  height: 30vh;
+}
+
+/* ICONS  */
+
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.main-icons {
+  background-color: #f97171;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* IMAGES GRID */
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+/* TEAM PICS */
+
+.team img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+/* CALLBACK FORM */
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+.callback-form input:focus {
+  outline-color: #f97171;
+}
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: lightgrey 1px solid;
+}
+
+.callback-form btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* POST*/
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 400px;
+  border-radius: 50%;
+  margin-bottom: 0 auto 30px;
+  display: inline-block;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+}
+.footer .social > * {
+  margin-right: 40px;
+}
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  color: #f97171;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 100px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .navbar ul a {
+    padding: 0px;
+  }
+
+  .content {
+    font-size: smaller;
+  }
+  .flex-items {
+    flex-direction: column;
+  }
+  .flex-columns .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  #travel {
+    padding: 0;
+  }
+  #travel .row {
+    padding: 0;
+  }
+  #travel .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  #travel img {
+    margin: 0;
+  }
+  .team img {
+    width: 70%;
+  }
+  .footer .social > * {
+    margin-right: 10px;
+  }
+  .post img {
+    width: 200px;
+  }
+}

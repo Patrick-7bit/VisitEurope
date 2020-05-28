@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6ed3610e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/lightbox.min.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/utilities.css" />
+    <title>Visit Europe</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-globe-europe"></i></span>
+          Visit Europe
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#travel">Voyages</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="home" class="content">
+        <h2>Les voyages forment la jeunesse</h2>
+        <p>Nous vous emmenons partout en Europe</p>
+        <a href="#about" class="btn"
+          ><i class="fas fa-chevron-right"></i> En savoir plus</a
+        >
+      </div>
+    </header>
+    <main>
+      <section id="about" class="icons bg-light">
+        <div class="flex-items">
+          <div>
+            <div>
+              <i class="fas fa-train fa-2x main-icons"></i>
+              <h3>Transport</h3>
+              <p>
+                En train, bus, voiture de location ou avion
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <i class="fas fa-bed fa-2x main-icons"></i>
+              <h3>Hébergement</h3>
+              <p>
+                Chez l'habitant, en appartement ou hôtel
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <i class="fas fa-route fa-2x main-icons"></i>
+              <h3>Itinéraire</h3>
+              <p>
+                Etabli selon vos goûts et vos préférences
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="/CSS/img/team.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-primary">
+              <h2>Nous vous proposons des formules sur mesure</h2>
+              <p>
+                Vous choisissez les dates de voyage, la durée, le nombre de
+                personnes, votre programme d'activités, de visites et nous vous
+                aidons à réaliser le voyage de vos rêves.
+              </p>
+              <a href="#about" class="btn btn-outline"
+                ><i class="fas fa-chevron-right"></i>
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases flex-grid section-padding" id="travel">
+        <header class="section-header">
+          <h2>Nos voyages</h2>
+          <p>
+            De la Scandinavie au Portugal en passant par la ville ou la
+            campagne...
+          </p>
+        </header>
+        <div class="row">
+          <div class="column">
+            <a
+              href="./CSS/img/louvre.jpg"
+              data-lightbox="travel"
+              data-title="Visiter le musée du Louvre à Paris"
+              ><img src="./CSS/img/louvre.jpg" alt="musée du Louvre"
+            /></a>
+            <a
+              href="./CSS/img/brittany-4593975_1280.jpg"
+              data-lightbox="travel"
+              data-title="Visiter la Bretagne!"
+            >
+              <img
+                src="./CSS/img/brittany-4593975_1280.jpg"
+                alt="paysage breton"
+            /></a>
+          </div>
+          <div class="column">
+            <a
+              href="./CSS/img/dublin-4955328_1280.jpg"
+              data-lightbox="travel"
+              data-title="Découvrer Dublin!"
+              ><img
+                src="./CSS/img/dublin-4955328_1280.jpg"
+                alt="maison en irlande"
+            /></a>
+            <a href="./CSS/img/nature-2396309_1280.jpg" data-lightbox="travel"
+              ><img src="./CSS/img/nature-2396309_1280.jpg" alt="mouton"
+            /></a>
+          </div>
+          <div class="column">
+            <a href="./CSS/img/lisbon-4401269_1280.jpg" data-lightbox="travel">
+              <img src="./CSS/img/lisbon-4401269_1280.jpg" alt="lisbonne"
+            /></a>
+            <a
+              href="./CSS/img/campomayor-472382_1280.jpg"
+              data-lightbox="travel"
+            >
+              <img src="./CSS/img/campomayor-472382_1280.jpg" alt="campagne"
+            /></a>
+          </div>
+          <div class="column">
+            <a href="./CSS/img/oslo-338281_1280.jpg" data-lightbox="travel"
+              ><img src="./CSS/img/oslo-338281_1280.jpg" alt="palais royal"
+            /></a>
+            <a href="./CSS/img/lofoten-4827611_1280.jpg" data-lightbox="travel"
+              ><img src="./CSS/img/lofoten-4827611_1280.jpg" alt="iles lofoten"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="/CSS/img/writing-828911_1280.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-secondary">
+              <h2>3 idées de circuit en Andalousie</h2>
+
+              <p>
+                Quatrième ville d'Espagne, Séville est traversée par le
+                Guadalquivir
+              </p>
+              <a href="blog.html" class="btn btn-outline"
+                ><i class="fas fa-chevron-right"></i>
+                Lisez notre blog
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="team section-padding">
+        <header class="section-header">
+          <h2>Notre équipe</h2>
+          <p>
+            Passionnés par le voyage et la découverte, nous nous engageons pour
+            vous faire vivre vos rêves!
+          </p>
+        </header>
+        <div class="flex-items">
+          <div>
+            <img
+              src="./CSS/img/man-in-white-shirt-709188.jpg"
+              alt="président"
+            />
+            <h4>Jean Dupont</h4>
+            <p>Président</p>
+          </div>
+          <div>
+            <img
+              src="./CSS/img/closeup-photo-of-woman-with-brown-coat-and-gray-top-733872.jpg"
+              alt="Vice-présidente"
+            />
+            <h4>Hélène Vout</h4>
+            <p>Vice-présidente</p>
+          </div>
+          <div>
+            <img
+              src="./CSS/img/photography-of-a-man-wearing-black-shirt-903661.jpg"
+              alt="responsable opérations"
+            />
+            <h4>Alain Dugrain</h4>
+            <p>Responsable opérations</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img
+                src="/CSS/img/man-wearing-brown-dress-shirt-holding-white-fedora-hat-1036627.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-light">
+              <form action="" class="callback-form">
+                <h2>Vous avez des questions ?</h2>
+                <p>
+                  Laissez nous vos coordonnées, nous vous contacterons sous peu
+                </p>
+                <div class="form-control">
+                  <label for="name" class="name"></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Votre nom"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email" class="email"></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="phone" class="phone"></label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Téléphone"
+                  />
+                </div>
+                <input type="submit" value="Envoyer" id="submit" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+        <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+        <p>Copyright &copy; 2020 Visit Europe</p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/lightbox.min.js"></script>
+    <script>
+      /* when the window is scrolled, at a certain offset, the navbar div is no more transparent*/
+      const navbar = document.getElementById("navbar");
+      window.onscroll = () => {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+        } else {
+          navbar.classList.add("top");
+        }
+      };
+    </script>
+  </body>
+</html>

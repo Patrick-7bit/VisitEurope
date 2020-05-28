@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6ed3610e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/utilities.css" />
+    <title>Lisez notre blog</title>
+  </head>
+  <body>
+    <header class="header blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-globe-europe"></i></span>
+          Visit Europe
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#about">A propos</a></li>
+            <li><a href="index.html#travel">Voyages</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h2>Blog</h2>
+      </div>
+    </header>
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="/CSS/img/spain-4517674_1280.jpg" alt="espagne" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-light">
+              <h2>3 idées de circuit en Andalousie</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posté par
+                <strong>Jean Dupont</strong> | 8 Mai 2020
+              </p>
+              <p>
+                Généralement, on utilise un texte en faux latin (le texte ne
+                veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui
+                permet donc de faire office de texte d'attente. L'avantage de le
+                mettre en latin est que l'opérateur sait au premier coup d'oeil
+                que la page contenant ces lignes n'est pas valide, et surtout
+                l'attention du client n'est pas dérangée par le contenu, il
+                demeure concentré seulement sur l'aspect graphique.
+              </p>
+              <a href="post.html" class="btn btn-dark"
+                ><i class="fas fa-chevron-right"></i>
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="/CSS/img/mallorca-253849_1280.jpg" alt="majorque" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-dark">
+              <h2>Découvrir Palma de Majorque</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posté par
+                <strong>Jean Dupont</strong> | 8 Mai 2020
+              </p>
+              <p>
+                Généralement, on utilise un texte en faux latin (le texte ne
+                veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui
+                permet donc de faire office de texte d'attente. L'avantage de le
+                mettre en latin est que l'opérateur sait au premier coup d'oeil
+                que la page contenant ces lignes n'est pas valide, et surtout
+                l'attention du client n'est pas dérangée par le contenu, il
+                demeure concentré seulement sur l'aspect graphique.
+              </p>
+              <a href="post.html" class="btn btn-light"
+                ><i class="fas fa-chevron-right"></i>
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img
+                src="/CSS/img/brandenburg-gate-417890_1280.jpg"
+                alt="berlin"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-light">
+              <h2>Nous vous proposons des formules sur mesure</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posté par
+                <strong>Jean Dupont</strong> | 8 Mai 2020
+              </p>
+
+              <p>
+                Généralement, on utilise un texte en faux latin (le texte ne
+                veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui
+                permet donc de faire office de texte d'attente. L'avantage de le
+                mettre en latin est que l'opérateur sait au premier coup d'oeil
+                que la page contenant ces lignes n'est pas valide, et surtout
+                l'attention du client n'est pas dérangée par le contenu, il
+                demeure concentré seulement sur l'aspect graphique.
+              </p>
+              <a href="post.html" class="btn btn-dark"
+                ><i class="fas fa-chevron-right"></i>
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+        <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+        <p>Copyright &copy; 2020 Visit Europe</p>
+      </div>
+    </footer>
+    <script>
+      const navbar = document.getElementById("navbar");
+      window.onscroll = () => {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+        } else {
+          navbar.classList.add("top");
+        }
+      };
+    </script>
+  </body>
+</html>
